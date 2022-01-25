@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://j.top4top.io/p_2215lyxv01.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://j.top4top.io/p_2215lyxv01.png" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://j.top4top.io/p_2215lyxv01.png" color="#111" />
+  <title>FRMNSYAAH18</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+body {
+  background: #fff;
+  font-family: "Varela Round", Helvetica, sans-serif;
+  color: #2A93D5;
+}
+
+.product-viewer {
+  width: 550px;
+  height: 550px;
+  position: fixed;
+  background: #B3D2FA;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  box-shadow: 0 70px 90px rgba(0, 0, 0, 0.1), 0 100px 100px rgba(0, 0, 0, 0.05);
+}
+.product-viewer header {
+  float: left;
+  width: 100%;
+  height: 36px;
+  margin-bottom: 20px;
+}
+.product-viewer header a {
+  color: #fff;
+  text-decoration: none;
+}
+.product-viewer header > a {
+  text-transform: uppercase;
+  line-height: 65px;
+  float: right;
+  margin-right: 0px;
+  margin-top: -50px;
+  font-weight: 600;
+  font-size: 15px;
+  //text selain di balam box
+}
+.product-viewer header ul {
+  float: left;
+  padding: 0;
+  margin-top: -35px;
+  width: 300px;
+  border-radius: 40px;
+  background: #fff;
+  height: 36px;
+}
+.product-viewer header ul li {
+  display: inline-block;
+  width: 32%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 36px;
+}
+.product-viewer header ul li a {
+  color: #6B6B6B;
+  font-size: 14px;
+}
+.product-viewer header ul li:hover a {
+  color: #8dbbf7;
+  font-weight: bold;
+}
+
+.product-viewer_content {
+  float: left;
+  height: 520px;
+  margin: auto;
+   margin-top: -30px;
+  background: #fff;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2), 0 100px 100px rgba(0, 0, 0, 0.03);
+  width: calc( 490px - 60px);
+  position: relative;
+  overflow: hidden;
+}
+
+.content-slider {
+  float: left;
+  height: 430px;
+  margin: auto;
+  background: #fff;
+  width: calc( (478px*3 - 60px) );
+  transition: transform 0.35s ease;
+}
+.content-slider.slide-1-active {
+  transform: translate3d(0, 0, 0);
+}
+.content-slider.slide-2-active {
+  transform: translate3d(-418px, 0, 0);
+}
+.content-slider.slide-3-active {
+  transform: translate3d(-836px, 0, 0);
+}
+.content-slider .slider-item {
+  width: 420px;
+  height: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.content-slider .slider-item figcaption span {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.content-slider .slider-item .desc {
+  color: #C4C4C4;
+  margin-bottom: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.content-slider .slider-item .desc h3 {
+  font-weight: bold;
+}
+.content-slider .slider-item .name {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 12px;
+}
+.content-slider .slider-item .name h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.content-slider .slider-item span.price {
+  font-weight: bold;
+}
+.content-slider .slider-item img {
+  width: 100%;
+
+}
+
+.control-slider {
+  float: left;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  text-align: center;
+}
+.control-slider ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.control-slider ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.control-slider ul a {
+  text-decoration: none;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: 35px;
+  line-height: 70px;
+  border-radius: 100%;
+  background: #C4C4C4;
+}
+.control-slider ul li.active a {
+  background: #2A93D5;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <div class="product-viewer">
+  <header>
+    <a href="contact.html">Kontak kami</a>
+
+<ul class="menu">
+      <li><a href="/xiaomi.html">Xiaomi</a></li>
+      <li><a href="/samsung.html">Samsung</a></li>
+      <li><a href="/iphone.html">iPhone</a></li>
+    </ul>
+  </header>
+  <section class="product-viewer_content">
+    <div class="content-slider slide-2-active">
+      <div class="slider-item">
+        <figure>
+          <img src="https://webshit.frmnsyaah18.repl.co/gmbr/rednote10.jpg"height="280" alt="RedmiNote10" />
+          
+          <figcaption>
+            <span class="desc"><h3>RAM 6, STORAGE 128 GB</h3></span>
+            <span class="name"><h2>Redmi Note 10 PRO</h2></span>
+            <span class="price">Rp 2,600,000</span>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div class="slider-item">
+        <figure>
+          <img src="https://webshit.frmnsyaah18.repl.co/gmbr/ipx.png" img height="285px" alt="" />
+          
+          <figcaption>
+            <span class="desc"><h3>STORAGE 128 GB</h3></span>
+            <span class="name"><h2>iPHONE X </h2></span>
+            <span class="price">Rp 5.199.000</span>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div class="slider-item">
+        <figure>
+          <img src="https://webshit.frmnsyaah18.repl.co/gmbr/vivox60.png" img height="285px" alt="" />
+          
+          <figcaption>
+            <span class="desc"><h3>RAM 12, STORAGE 256</h3></span>
+            <span class="name"><h2>VIVO X60 PRO 5G</h2></span>
+            <span class="price">Rp 7.560.000</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="control-slider">
+      <ul>
+        <li><a href="#" id="select-item-1">&nbsp;</a></li>
+        <li class="active"><a href="#" id="select-item-2">&nbsp;</a></li>
+        <li><a href="#" id="select-item-3">&nbsp;</a></li>
+      </ul>
+    </div>
+    
+  </section>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  
+      <script id="rendered-js" >
+// Very basic slider 
+
+var slider,
+select1,
+select2,
+select3,
+sliderClasses;
+
+slider = document.querySelector('.content-slider');
+select1 = document.getElementById('select-item-1');
+select2 = document.getElementById('select-item-2');
+select3 = document.getElementById('select-item-3');
+
+sliderClasses = ['slide-1-active', 'slide-2-active', 'slide-3-active'];
+
+select1.addEventListener('click', function () {
+  slider.className = 'content-slider ';
+  slider.classList.add(sliderClasses[0]);
+  select1.parentNode.className = '';
+  select2.parentNode.className = '';
+  select3.parentNode.className = '';
+  this.parentNode.className = 'active';
+});
+select2.addEventListener('click', function () {
+  slider.className = 'content-slider ';
+  slider.classList.add(sliderClasses[1]);
+  select1.parentNode.className = '';
+  select2.parentNode.className = '';
+  select3.parentNode.className = '';
+  this.parentNode.className = 'active';
+});
+select3.addEventListener('click', function () {
+  slider.className = 'content-slider ';
+  slider.classList.add(sliderClasses[2]);
+  select1.parentNode.className = '';
+  select2.parentNode.className = '';
+  select3.parentNode.className = '';
+  this.parentNode.className = 'active';
+
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
