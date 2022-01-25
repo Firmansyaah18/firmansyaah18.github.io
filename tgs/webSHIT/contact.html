@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-   <!-- <title> Responsive Contact Us Form  | CodingLab </title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/css" href="contact.css">
-   </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="./contact.css">
+  <script src="https://kit.fontawesome.com/7414e22221.js"></script>
+  <title>Contact Us</title>
+</head>
 <body>
-  <div class="container">
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Alamat</div>
-          <div class="text-one">Tegal Rejo</div>
-          <div class="text-two">Yogyakarta</div>
+  <section id="heading">
+    <div class="container heading-grid">
+      <div class="heading-wrap">
+        <h1>FRMNSYAAH18</h1>
+        <p>karena mengunakan domain gratis jadi untuk sementara waktu tidak bisa mengirim pesan melalui form di bawah ini.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="form-box" class="animated jackInTheBox">
+    <div class="container">
+      <div class="form-box form-box-grid">
+        <div class="form-info">
+          <h3>Contact information</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i>Tegal Rejo, Yogyakarta</li>
+            <li><i class="fas fa-mobile-alt"></i>+62 8966 5569 661</li>
+            <li><i class="fas fa-envelope"></i>frmnsyaah18@gmail.com</li>
+          </ul>
         </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Nomor Telfon</div>
-          <div class="text-one">+62 8966 556 9661</div>
-        </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">frmnsyaah18@gmail.com</div>
+  
+        <div class="form-input">
+          <h3>Send us a message</h3>
+          <form>
+            <p>
+              <label for="first_name">First name</label>
+              <input type="text" name="first_name" placeholder="First Name..." required>
+            </p>
+            <p>
+              <label for="Last_name">Last name</label>
+              <input type="text" name="last_name" placeholder="Last Name..." required>
+            </p>
+            <p class="full">
+              <label for="email">Email address</label>
+              <input type="email" name="email" placeholder="Email Here..." required>
+            </p>
+            <p class="full">
+              <label for="message">Your message</label>
+              <textarea name="message" required></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Send Message</button>
+            </p>
+          </form>
         </div>
       </div>
-      <div class="right-side">
-        <div class="topic-text">Kirim kami pesan</div>
-        <p>Maaf karna domain dan hosting adalah <b><u> free</u></b> sebab tujuan membuat website ini hanyalah pembelajaran maka untuk sementara tidak bisa mengirim email langsung melalui form di bawah ini.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Nama anda">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Email anda">
-        </div>
-        <div class="input-box message-box">
-          
-        </div>
-        <div class="button">
-          <input type="button" value="KIRIM" >
-        </div>
-      </form>
     </div>
-    </div>
-  </div>
+  </section>
 </body>
 </html>
