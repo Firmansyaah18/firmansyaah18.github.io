@@ -1,8 +1,8 @@
 # this is only for search engines, it does not appear in the home
 # as long as the json variables name and description are provided
 title: hoho <//<
-description: my simple web
-baseurl: "pwnd.me"
+description: simple web Page
+baseurl: ""
 url: https://pwnd.me
 
 # this information is shown on the homepage, all fields are optional and
