@@ -2,8 +2,8 @@
 # as long as the json variables name and description are provided
 title: hoho <//<
 description: my simple web
-baseurl: ""
-url: https://hacked-jekyll.netlify.app
+baseurl: "pwnd.me"
+url: https://pwnd.me
 
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
