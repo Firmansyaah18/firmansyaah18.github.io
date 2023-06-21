@@ -1,0 +1,42 @@
+# this is only for search engines, it does not appear in the home
+# as long as the json variables name and description are provided
+title: hoho <//<
+description: my simple web
+baseurl: ""
+url: https://hacked-jekyll.netlify.app
+
+# this information is shown on the homepage, all fields are optional and
+# can be declared either as a single string or as a string array/hash
+json:
+  name: frmnsyaah
+  description:
+    - Hello!
+    - This my tiny web Page
+    - Still in progress.
+  cv: assets/cv.pdf
+  address:
+    - Indonesia
+    - Yogyakarta
+  contact:
+    phone: +62 private
+    email: iam@pwnd.me
+  ToxID: https://pwnd.me/tox
+  source: https://github.com/piazzai/hacked-jekyll
+  profiles:
+    facebook: https://www.facebook.com/frmnsyaah
+    twitter: https://twitter.com/frmnsyaah18
+    instagram: https://www.instagram.com/pwnd.me/
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  sourcemap: never
