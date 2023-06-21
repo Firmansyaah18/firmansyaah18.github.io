@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "hack";
+  src: url("../fonts/hack-regular-subset.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "hack";
+  src: url("../fonts/hack-italic-subset.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+body {
+  font-family: "hack", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--oc-gray-9);
+  color: var(--oc-blue-3);
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: lowercase;
+}
+@media (min-width: 576px) {
+  main {
+    font-size: 18px;
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    font-size: 20px;
+    width: 60%;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  font-style: italic;
+}
+a:hover, a:active {
+  color: var(--oc-green-5);
+}
+
+.json {
+  white-space: nowrap;
+}
+.json:before {
+  content: "{";
+  color: var(--oc-green-4);
+}
+.json:after {
+  content: "}";
+  color: var(--oc-green-4);
+}
+
+.block {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--oc-gray-0);
+}
+
+.key:after {
+  content: ": ";
+  color: var(--oc-green-4);
+}
+
+.attr {
+  color: var(--oc-blue-4);
+}
+
+.attrr {
+  color: var(--oc-blue-3);
+}
+
+.list-attr:before {
+  content: '"';
+  color: var(--oc-red-8);
+}
+.list-attr:after {
+  content: '",';
+  color: var(--oc-red-8);
+}
+
+.array-key:after {
+  content: ": [";
+  color: var(--oc-green-4);
+}
+
+.array-attr {
+  margin-left: 1.5rem;
+  color: var(--oc-gray-0);
+}
+.array-attr:before {
+  content: '"';
+  color: var(--oc-red-8);
+}
+.array-attr:after {
+  content: '",';
+  color: var(--oc-red-8);
+}
+
+.array-attr1 {
+  margin-left: 1.5rem;
+  color: var(--oc-blue-3);
+}
+.array-attr1:before {
+  content: '"';
+  color: var(--oc-red-8);
+}
+.array-attr1:after {
+  content: '",';
+  color: var(--oc-red-8);
+}
+
+.array:after {
+  content: "],";
+  color: var(--oc-green-4);
+}
+
+.list-key:after {
+  content: ": {";
+  color: var(--oc-green-4);
+}
+
+.list:after {
+  content: "},";
+  color: var(--oc-green-4);
+}
+
+.list-subkey {
+  margin-left: 1.5rem;
+}
+.list-subkey:after {
+  content: ": ";
+  color: var(--oc-green-4);
+}

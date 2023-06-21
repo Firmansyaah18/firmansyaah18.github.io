@@ -1,0 +1,96 @@
+.json {
+  white-space: nowrap;
+  &:before {
+    content: "{";
+    color: var(--oc-green-4);
+  }
+  &:after {
+    content: "}";
+    color: var(--oc-green-4);
+  }
+}
+
+.block {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--oc-gray-0);
+ }
+
+.key:after {
+  content: ": ";
+  color: var(--oc-green-4);
+}
+
+.attr {
+   color: var(--oc-blue-4);
+}
+
+.attrr {
+   color: var(--oc-blue-3);
+}
+
+.list-attr {
+  &:before {
+    content: '"';
+    color: var(--oc-red-8);
+  }
+  &:after {
+    content: '",';
+    color: var(--oc-red-8);
+  }
+}
+
+.array-key:after {
+  content: ": [";
+  color: var(--oc-green-4);
+}
+
+.array-attr {
+  margin-left: 1.5rem;
+  color: var(--oc-gray-0);
+  &:before {
+    content: '"';
+    color: var(--oc-red-8);
+  }
+  &:after {
+    content: '",';
+    color: var(--oc-red-8);
+  }
+}
+
+.array-attr1 {
+  margin-left: 1.5rem;
+  color: var(--oc-blue-3);
+  &:before {
+    content: '"';
+    color: var(--oc-red-8);
+  }
+  &:after {
+    content: '",';
+    color: var(--oc-red-8);
+  }
+}
+
+.array:after {
+  content: "],";
+  color: var(--oc-green-4);
+}
+
+.list-key:after {
+  content: ": {";
+  color: var(--oc-green-4);
+}
+
+.list:after {
+  content: "},";
+  color: var(--oc-green-4);
+}
+
+.list-subkey {
+  margin-left: 1.5rem;
+  &:after {
+    content: ": ";
+    color: var(--oc-green-4);
+  }
+}
