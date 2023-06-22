@@ -65,7 +65,7 @@ layout: default
     <p><span class="key">ToxID</span><span class="attrr"><a href="{{ site.json.ToxID }}">{{ ToxID }}</a></span></p>
     {% endif %}
     {% if site.json.source %}
-    {% assign source = site.json.source | split: "github.com/" | slice: 1 %}
+    {% assign source = site.json.source | split: "//" | slice: 1 %}
     <p><span class="key">source</span><span class="attrr"><a href="{{ site.json.source }}">{{ source }}</a></span></p>
     {% endif %}
   </div>
